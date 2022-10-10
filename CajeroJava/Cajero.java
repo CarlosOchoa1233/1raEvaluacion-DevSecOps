@@ -22,7 +22,8 @@ public class Cajero {
 				if (pin == cuenta.getPin()) {
 					acceso = true;
 				} else {
-					System.out.println("Error");
+					int restante = 3-intento;
+					System.out.println("Error, le quedan "+restante+" intentos");
 					intento++;
 				}
 				
